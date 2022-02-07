@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    // pulando duas linhas
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+
+var vitorias = parseInt (prompt ("Entre com o número de vítorias:"));
+var empates = parseInt (prompt ("Entre com o número de empates:"));
+var pontos = vitorias *3 + empates *1;
+
+mostra ("Parabéns! Neste ano os pontos do seu time é " + pontos + ".");
+
+if (pontos > 28) {
+    mostra ("A pontuação do seu time no ano passado foi 28 pontos.");
+    mostra ("O seu time está melhor do que o ano passado");
+}
+
+if (pontos <  28) {
+    mostra ("A pontuação do seu time no ano passado foi 28 pontos.");
+    mostra (" O seu time está pior do que o ano passado");
+}
+
+if (pontos == 28) {
+    mostra ("A pontuação do seu time no ano passado foi 28 pontos.");
+    mostra ("A pontuação do seu time neste ano é igual ao ano passado");
+}
+
+mostra ("Fim!")
+</script>

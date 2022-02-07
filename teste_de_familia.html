@@ -1,0 +1,38 @@
+<meta charset="FTP-8">
+<h3>Lógica da Programação: Iniciando meu primeiro código, rumo ao sucesso </h3>
+<br>
+<script>
+
+
+function pulaLinha (){
+    document.write("<br>");
+}
+
+function calculaIdade () {
+  terceiroFilho()
+}
+
+function mostra (frase) {
+    document.write(frase);
+    pulaLinha();
+    
+    }
+
+var anoDeNascimentoDaMae = 1958;
+var anoDeNascimentoDoPai = 1960;
+var idadePrimeiroFilho = 1979;
+var idadeSegundoFilho = 1983;
+var idadeTerceiroFilho = 1998;
+var nomeDaMae = "Maria Aparecida Da Costa Fernandes";
+var nomeDoPai = "Edson Gonzaga Fernandes";
+var nomeDoPrimeiroFilho = "Rondineli de Almeida Fernandes";
+var nomeDoSegundoFilho = "Neiva Adriana Fernandes";
+var nomeDoTerceiroFilho = "Emerson Gonzaga Fernandes";
+
+
+mostra("Eu, " + nomeDoTerceiroFilho + ", nasci no ano de " + idadeTerceiroFilho +". Sou Filho de " + nomeDaMae + " e de " + nomeDoPai +".")
+mostra("Antes de mim, meus pais tiveram outros filhos. Sou o caçula.");
+mostra(nomeDoPrimeiroFilho + " é o mais velho. Nasceu em " + idadePrimeiroFilho + ". Sua diferença de idade com a minha é de " + (idadeTerceiroFilho - idadePrimeiroFilho) + " anos.");
+mostra("A filha do meio se chama " + nomeDoSegundoFilho +". Ela nasceu " + (idadeSegundoFilho - idadePrimeiroFilho) + " anos após o " + nomeDoPrimeiroFilho + ". A sua diferença de idade com a minha é de apenas " + (idadeTerceiroFilho - idadeSegundoFilho) + " anos.");
+
+</script>
